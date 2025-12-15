@@ -371,6 +371,9 @@ of comment objects.
 let idx = null;
 
 // Complete the exercise in the space below:
+idx = comments.findIndex((comment) => {
+  return comment.id === 123523;
+});
 
 // Check your work:
 console.log("Exercise 9 my result: ", idx);
