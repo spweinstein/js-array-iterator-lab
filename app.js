@@ -296,6 +296,15 @@ old or older.
 let isAdultPresent = null;
 
 // Complete the exercise in the space below:
+const today = new Date();
+const currentYear = today.getFullYear();
+console.log(`Current year: ${currentYear}`);
+isAdultPresent = devs.some((dev) => {
+  const age = currentYear - dev.year;
+  //   console.log(dev);
+  //   console.log(`age: ${age}`);
+  return age >= 18;
+});
 
 // Check your work:
 console.log("Exercise 6 my result: ", isAdultPresent);
