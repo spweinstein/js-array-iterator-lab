@@ -166,7 +166,9 @@ let sortedByBirthYear = [];
 
 // Complete the exercise in the space below:
 
-
+sortedByBirthYear = [...inventors].sort((inventor1, inventor2) => {
+  return inventor1.year - inventor2.year;
+});
 
 // Check your work:
 console.log("Exercise 3 my result: ", sortedByBirthYear);
