@@ -327,6 +327,15 @@ let isEveryone19OrOlder = null;
 
 // Complete the exercise in the space below:
 
+isEveryone19OrOlder = devs.every((dev) => {
+  const age = currentYear - dev.year;
+  console.log(dev);
+  console.log(`age: ${age}`);
+  const isAdult = age >= 19;
+  console.log(`isAdult: ${isAdult}`);
+  return age >= 19;
+});
+
 // Check your work:
 console.log("Exercise 7 my result: ", isEveryone19OrOlder);
 console.log("Exercise 7 correct result: ", false);
@@ -343,7 +352,9 @@ a specific ID 823423 from an array of comment objects.
 let commentById = {};
 
 // Complete the exercise in the space below:
-
+commentById = comments.find((comment) => {
+  return comment.id === 823423;
+});
 // Check your work:
 console.log("Exercise 8 my result: ", commentById);
 console.log("Exercise 8 correct result: ", { text: "Super good", id: 823423 });
